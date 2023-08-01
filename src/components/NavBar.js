@@ -1,28 +1,34 @@
-import { Component } from 'react';
+import  Logovenier  from "../img/Logovenier.png"
 
 function NavBar () {
   return (
-    <>
-    <div className="container">
-      <nav className="nav">
-        <div className="nav_brand">
-          <a className="nav_link" href="#">MiMarca</a>
+    <header>
+        <a href="#">
+            <div className="logo">
+                <img src= {Logovenier} alt="logo" width="150"/>
+            </div>
+        </a>
+        <ul>
+            <li>
+                <a href="#">INICIO</a>
+            </li>
+            <li>
+                <a href="#">NOSOTROS</a>
+            </li>
+            <li>
+                <a href="#">PRODUCTOS</a>
+            </li>
+            <li>
+                <a href="#">CONTACTO</a>
+            </li>
+        </ul>
+        <div className="cart">
+            <box-icon name="cart"></box-icon>
+            <span className="item_total">0</span>
         </div>
-        <ul className="nav_list">
-          <li>
-            <a className="nav_link" href="#">Quienes somos</a>
-          </li>
-          <li>
-            <a className="nav_link" href="#">Carrito</a>
-          </li>
-          <li>
-            <a className="nav_link" href="#">Carrito</a>
-          </li>
-        </ul>  
-      </nav>
-    </div>
-    </>
-  );
-};
+        
+    </header>
+        )
+}
 
 export default NavBar;
