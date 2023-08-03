@@ -13,7 +13,6 @@
       monospace;
   }
   .App{
-   
     max-width: 1550px;
     width: 100%;
     min-height: 100vh;
@@ -35,7 +34,7 @@
     flex-wrap: wrap;
     position: fixed;
     box-sizing: border-box;
-    background-color: white;
+
     box-shadow: 0 5px 10px gray;
     border-radius: 15px;
   }
@@ -86,6 +85,14 @@
     font-weight: 700;
     background-color: rgb(230, 18, 124);
   }
+
+h1{
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
   
   /*----------MEDIA---------*/
   @media only screen and (max-width: 600px){
